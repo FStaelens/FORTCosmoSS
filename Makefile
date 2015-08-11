@@ -13,7 +13,7 @@ SRCS = scales.f90 inifile.f90 input.f90 grid.f90 math_lib.f90 fparser.f90 potent
 
 OBJS = scales.o inifile.o input.o grid.o math_lib.o fparser.o potential.o common.o hydro.o sources.o constraints.o BVP_LA.o BVP_M.o output.o initial_profiles.o init.o evolution.o debug.o
 
-LIBS = -llapack -lblas
+LIBS = #-llapack -lblas
 
 F90 = gfortran
 
