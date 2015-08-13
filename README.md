@@ -3,8 +3,18 @@ A FORTRAN code for the treatment and numerical integration of the Einstein Field
 
 Written for use with GNU gfortran
 
-Make sure you have a folder named "obj" before compilation
 To compile, use instruction :
+
+```
+make
+```
+The .o and .mod files can be deleted using 
+
+```
+make clean
+```
+
+Any change to ./src/grid.f90 should be followed by a complete rebuilding through
 
 ```
 make clean all
