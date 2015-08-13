@@ -9,9 +9,9 @@ vpath %.f $(SRCD)
 
 EXECTBL = main
 
-SRCS = scales.f90 inifile.f90 input.f90 grid.f90 math_lib.f90 fparser.f90 potential.f90 common.f90 hydro.f90 sources.f90 constraints.f90 BVP_LA.f BVP_M.f90 output.f90 initial_profiles.f90 init.f90 evolution.f90 debug.f90 
+SRCS = scales.f90 inifile.f90 input.f90 grid.f90 math_lib.f90 fparser.f90 potential.f90 common.f90 hydro.f90 sources.f90 constraints.f90 BVP_LA.f BVP_M.f90 output.f90 initial_profiles.f90 init.f90 evolution.f90 main.f90 
 
-OBJS = scales.o inifile.o input.o grid.o math_lib.o fparser.o potential.o common.o hydro.o sources.o constraints.o BVP_LA.o BVP_M.o output.o initial_profiles.o init.o evolution.o debug.o
+OBJS = scales.o inifile.o input.o grid.o math_lib.o fparser.o potential.o common.o hydro.o sources.o constraints.o BVP_LA.o BVP_M.o output.o initial_profiles.o init.o evolution.o main.o
 
 LIBS = #-llapack -lblas
 

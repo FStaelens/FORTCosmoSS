@@ -7,7 +7,7 @@
 ! Last edited : 2015-08-10
 !
 ! --------------------------------------------------------------------------
-program debug
+program main
   !
   ! the main program that includes the main loop for the numerical integration in time
   ! as numerical infinities might have physical meaning, the code is designed to keep
@@ -144,4 +144,4 @@ contains
     write(10,'(a,i9,a,f10.3,a,f10.3)')' --> output i =', iter, ' time =', t, ' cosmic_time =', t_sync
   end subroutine write_in_log
 
-end program debug
+end program main
