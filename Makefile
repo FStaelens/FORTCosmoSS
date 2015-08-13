@@ -35,12 +35,14 @@ $(EXECTBL): $(OBJS)
 	@echo '' 
 	@echo '============ ...building' $*.o '============'
 	@echo ''
+	@ mkdir -p obj
 	cd $(OBJD); $(F90) -c $(F90FLAGS) $(SRCD)/$(*).f
 
 %.o $(OBJD)/%.o: %.f90
 	@echo '' 
 	@echo '============ ...building' $*.o '============'
 	@echo ''
+	@ mkdir -p obj
 	cd $(OBJD); $(F90) -c $(F90FLAGS) $(SRCD)/$(*).f90
 
 flush:
