@@ -234,12 +234,7 @@ contains
     integer :: j
     real(kind=8) :: Delta4_x_i
 
-    if((j>nx+1).or.(j<0))then
-       Delta4_x_i = 0d0
-       print*, "Warning : invalid index reference during call to Delta4_x_i"
-    else
-       Delta4_x_i = u(j+2) - 4d0*u(j+1) + 6d0*u(j) - 4d0*u(j-1) + u(j-2)
-    end if
+    Delta4_x_i = u(j+2) - 4d0*u(j+1) + 6d0*u(j) - 4d0*u(j-1) + u(j-2)
 
   end function Delta4_x_i
 
